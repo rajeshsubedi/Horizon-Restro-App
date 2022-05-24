@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HorizonSoftware.HomePageFlyout"
+             Title="Flyout">
+    <StackLayout>
+        <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}">
+            <ListView.Header>
+                <Grid  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <!--new added-->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+
+
+                    <Image Aspect="AspectFill"
+                      Source="back1.png"
+                           Grid.ColumnSpan="5"
+                           Grid.RowSpan="4"
+                           Opacity="0.6"/>
+
+
+                    <Frame Padding="0" 
+                                HeightRequest="50"
+                                WidthRequest="50"
+                                BackgroundColor="White"
+                                CornerRadius="25"
+                                BorderColor="Teal"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                                HorizontalOptions="Start"
+                                VerticalOptions="End">
+
+
+                        <Frame.Content>
+                            <Image Source="horizon.png" Aspect="Fill"/>
+                        </Frame.Content>
+                    </Frame>
+
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Row="1" Margin="10,0,0,0"
+                       Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
+                        <Label
+                            HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                          Text="Horizon Technology"
+                            TextColor="White"
+                            FontSize="25"
+                            FontAttributes="Bold"
+                           
+                           Style="{DynamicResource SubtitleStyle}"/>
+                        <Label
+                            HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                          Text="Horizontech24@gmail.com"
+                            TextColor="White"
+                            FontAttributes="Italic"
+                           
+                           Style="{DynamicResource SubtitleStyle}"/>
+                    </StackLayout>
+                </Grid>
+            </ListView.Header>
+
+
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <ViewCell Tapped="ViewCell_Tapped">
+                        <StackLayout  Padding="10,10,10,20" HorizontalOptions="FillAndExpand" BackgroundColor="#EEEEEE">
+                            <!--<Label VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center" 
+                    Text="{Binding Title}" 
+                    FontSize="24"/>-->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding IconSource}" BackgroundColor="#EEEEEE"  Margin="0,0,5,0"/>
+                                <Label Grid.Column="1" TextColor="Black" BackgroundColor="#EEEEEE" Padding="10,5,0,0" FontSize="Subtitle" Text="{Binding Title}"/>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
+

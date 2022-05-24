@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HorizonSoftware.HomePageDetail"
+             Title="Horizon Technology"
+             BackgroundColor="#eeeeee">
+    
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add"           
+                 Order="Primary"
+                 Priority="0"
+                     />
+    </ContentPage.ToolbarItems>-->
+    <StackLayout>
+        <!--adding dashboard image-->
+         <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="415"/>
+                    <!--<ColumnDefinition Width="*"/>-->
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="400"/>
+                </Grid.RowDefinitions>
+
+                <Frame CornerRadius="20" 
+                   Padding="0"
+                        IsClippedToBounds="True">
+                    <Image Aspect="AspectFill"
+                           Source="restroimage1"
+                           Grid.ColumnSpan="5"
+                           Grid.RowSpan="4"
+                           Opacity="1"/>
+                </Frame>
+
+                        <!--for heading detail in dashboard 1st image-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+
+
+                    <Frame Padding="0"
+                                HeightRequest="55"
+                                WidthRequest="55"
+                                BackgroundColor="White"
+                                CornerRadius="30"
+                                BorderColor="Teal"
+                                Grid.Column="1"
+                                  Grid.Row="1"
+                                HorizontalOptions="Start"
+                                VerticalOptions="End">
+
+                        <Frame.Content>
+                            <Image Source="Horizon.png" Aspect="Fill" Margin="0,0,0,0"/>
+                        </Frame.Content>
+                    </Frame>
+
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Row="1" Margin="10,0,0,0"
+                       Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
+                        <Label
+                            HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                          Text="Burger House And Crunchy Fried Checken"
+                            TextColor="White"
+                            FontSize="30"
+                            FontAttributes="Bold"
+                           Style="{DynamicResource SubtitleStyle}"/>
+
+                        <!--<Label Margin="0,-5,0,0"
+                            HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                          Text="Samasti24@gmail.com"
+                            TextColor="White"
+                            FontAttributes="Italic"
+                           Style="{DynamicResource SubtitleStyle}"/>-->
+
+                        <Label Margin="0,-5,0,0"
+                            HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                               Text="Naxal,Kathmandu"
+                            TextColor="White"
+                            FontAttributes="Italic"
+                           Style="{DynamicResource SubtitleStyle}"/>
+                    </StackLayout>
+                </Grid>
+
+
+
+                                <!--for Images and detail in dashboard-->
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="6"/>
+                        <ColumnDefinition Width="190"/>
+                        <ColumnDefinition Width="190"/>
+                        <ColumnDefinition Width="120"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+
+                                     <!--for image and detail 1(Order table)-->
+
+                    <Button                 
+                                  Text="Order table"
+                                    x:Name="Ordertable"
+                                  TextColor="White"
+                                  BackgroundColor="#112B47"
+                                    BorderColor="#6D6D6D"
+                                  BorderWidth="1.5"
+                                  CornerRadius="20"
+                                      Grid.Row="1"
+                                       Grid.Column="1"
+                                    FontSize="18"                         
+                               Clicked="Ordertable_Clicked" >
+                    </Button>
+                    
+                    <Label Grid.Row="2"
+                           Grid.Column="1"
+                           Padding="50,0,-10,0"
+                            HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                             Text="Order Table"
+                            TextColor="White"
+                            FontSize="18"
+                            FontAttributes="Bold"/>
+
+                                      <!--for image and detail 2(amount previewreview)-->
+                    <Button 
+                                
+                                  Text="Amount Preview"
+                                    x:Name="Amountpreview"
+                                  TextColor="White"
+                                  BackgroundColor="#112B47"
+                                    BorderColor="#6D6D6D"
+                                  BorderWidth="1.5"
+                                  CornerRadius="20"
+                                      Grid.Row="1"
+                                       Grid.Column="2"
+                                    Font="18"
+                                                        
+                               Clicked="Amountpreview_Clicked"                    
+              >
+                    </Button>
+
+
+                    <Label Grid.Row="2"
+                           Grid.Column="2"
+                           Padding="20,0,0,0"
+                            HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                             Text="Amount Preview"
+                            TextColor="White"
+                            FontSize="18"
+                            FontAttributes="Bold"/>
+ 
+                           <!--for image and detail 3 (Today)-->
+                 
+
+
+                </Grid>
+            </Grid>
+        </StackLayout>
+
+
+                                              <!--for lower image-->
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="415"/>
+                    <!--<ColumnDefinition Width="*"/>-->
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <!--<RowDefinition Height="*"/>-->
+                </Grid.RowDefinitions>
+            <StackLayout>
+                <Frame CornerRadius="20" 
+                    Padding="0"
+                     IsClippedToBounds="True">
+                    <Image Aspect="Fill"
+                      Source="restroimage1.png"
+                           Grid.ColumnSpan="5"
+                           Grid.RowSpan="4"
+                           Opacity="1"/>
+                </Frame>
+            </StackLayout>
+        
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="10"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+           
+
+            <Frame Padding="0" 
+                                HeightRequest="55"
+                                WidthRequest="55"
+                                BackgroundColor="Black"
+                                CornerRadius="29"
+                                BorderColor="Teal"
+                                Grid.Column="2"
+                                 Grid.Row="1"
+                                HorizontalOptions="Start"
+                                VerticalOptions="End">
+                <Frame.Content>
+                    <Image Source="horizon.png" Aspect="Fill"/>
+                </Frame.Content>
+            </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Row="1" Margin="70,0,0,0"
+                       Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
+                        <Label
+                            
+                            HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                          Text="Horizon Technology"
+                            TextColor="White"
+                            FontSize="25"
+                            FontAttributes="Bold"
+                           Style="{DynamicResource SubtitleStyle}"/>
+
+                        <Label
+                            Margin="0,-5,0,0"
+                            HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                          Text="Horizontech24@gmail.com"
+                            TextColor="White"
+                            FontAttributes="Italic"                        
+                           Style="{DynamicResource SubtitleStyle}"/>
+
+                        <Label
+                            Margin="0,-5,0,0"
+                            HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                          Text="Mid-baneshor,Kathmandu"
+                            TextColor="White"
+                            FontAttributes="Italic"                        
+                           Style="{DynamicResource SubtitleStyle}"/>
+                    </StackLayout>
+                </Grid>
+                
+                <Button 
+              VerticalOptions="Center"
+              Text="logout"
+                x:Name="Close"
+              TextColor="White"
+              BackgroundColor="#112B47"
+                BorderColor="#6D6D6D"
+              BorderWidth="1.5"
+              CornerRadius="20"
+           Clicked="Close_Clicked_1"
+            Margin="120,120,120,0"
+              ></Button>
+                
+            </Grid>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>

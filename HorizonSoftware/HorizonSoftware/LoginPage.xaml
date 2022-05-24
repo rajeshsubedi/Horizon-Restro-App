@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HorizonSoftware.LoginPage"
+              NavigationPage.HasNavigationBar="false">
+
+    <StackLayout>
+        <!--<Entry Text="{Binding AccessToken}"/>-->
+
+
+
+        <Frame BackgroundColor="#112B47" Padding="0,0,0,0" CornerRadius="0">
+            <Label Text="Welcome to Horizon Technology!" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+
+        <Image Source="horizon.png"
+               WidthRequest="110" 
+               HeightRequest="110">
+        </Image>
+
+        <Label Text="Please Login!" FontSize="Subtitle" FontAttributes="Bold" TextColor="#171717" Padding="160,10,0,0"/>
+
+
+        <StackLayout Padding="40,40,40,10" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+        
+            <!--<Entry  x:Name="txtUserName" Placeholder="UserName" TextColor="#171717" PlaceholderColor="Gray"></Entry>-->
+            <Entry  x:Name="txtUsername" Placeholder="Username" TextColor="#171717" PlaceholderColor="Gray"></Entry>
+            <Entry  x:Name="txtPassword" Placeholder="Password" IsPassword="True" TextColor="#171717" PlaceholderColor="Gray"></Entry>
+        </StackLayout>
+        
+        
+
+        <StackLayout>
+            <Label Padding="140,5,0,10">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Frogot Password?" TextColor="#171717" FontAttributes="Bold" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Label.GestureRecognizers>
+
+
+            </Label>
+        </StackLayout>
+        
+        
+        
+        
+        
+        <StackLayout Margin="20,0,20,0">
+            <Button 
+              VerticalOptions="Center"
+              Text="Login"
+              TextColor="White"
+              BackgroundColor="#112B47"
+                BorderColor="#6D6D6D"
+              BorderWidth="1.5"
+              CornerRadius="20"
+           Clicked="Button_Clicked"
+            Margin="30,0,30,0"
+              ></Button>
+        </StackLayout>
+        
+        
+        <StackLayout Margin="20,10,20,0">
+            <Button 
+              VerticalOptions="Center"
+              Text="CLOSE"
+                x:Name="Close"
+              TextColor="White"
+              BackgroundColor="#112B47"
+                BorderColor="#6D6D6D"
+              BorderWidth="1.5"
+              CornerRadius="20"
+           Clicked="Button_Clicked_1"
+            Margin="30,0,30,0"
+              ></Button>
+        </StackLayout>
+
+
+        <Label HorizontalOptions="Center">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Don't have an account? " TextColor="#1C1C1C"/>
+                    <Span Text="Please Signup" TextColor="#171717" FontAttributes="Bold" TextDecorations="Underline"/>
+                </FormattedString>
+            </Label.FormattedText>
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+
+
+        </Label>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,222 @@
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\HorizonSoftware.iOS.exe
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\HorizonSoftware.iOS.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Azure.Core.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Azure.Identity.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\EntityFramework.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Data.SqlClient.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Identity.Client.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Win32.Registry.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLite-net.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLitePCLRaw.core.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Data.SQLite.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Buffers.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.CodeDom.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Data.SqlClient.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Data.SQLite.EF6.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Memory.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Runtime.Caching.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.AccessControl.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.Cryptography.Cng.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.Permissions.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.Principal.Windows.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.SecureString.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Text.Encodings.Web.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Text.Json.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ImageCircle.Forms.Plugin.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Plugin.Settings.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\HorizonSoftware.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\HorizonSoftware.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\actool\_ProcessedImageAssetsPath.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\ibtool\_ProcessedInterfaceDefinitionsPath.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\_ProcessedBundleResourcesPath.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\_ProcessedContentPath.items
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\optimized\
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.csproj.CopyComplete
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.exe
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Rg.Plugins.Popup.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Rg.Plugins.Popup.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\HorizonSoftware.iOS.exe
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\HorizonSoftware.iOS.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Azure.Core.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Azure.Identity.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\EntityFramework.SqlServer.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\EntityFramework.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Data.SqlClient.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Data.SqlClient.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Data.Sqlite.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Identity.Client.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.Logging.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.Protocols.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.IdentityModel.Tokens.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Microsoft.Win32.Registry.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Rg.Plugins.Popup.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Rg.Plugins.Popup.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLite-net.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLitePCLRaw.batteries_v2.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLitePCLRaw.nativelibrary.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLitePCLRaw.core.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Data.SQLite.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Buffers.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.CodeDom.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Configuration.ConfigurationManager.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Data.SqlClient.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Data.SQLite.EF6.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.IdentityModel.Tokens.Jwt.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Memory.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Runtime.Caching.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.AccessControl.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.Cryptography.Cng.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.Cryptography.ProtectedData.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.Permissions.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.Principal.Windows.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Security.SecureString.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Text.Encoding.CodePages.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Text.Encodings.Web.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\System.Text.Json.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ImageCircle.Forms.Plugin.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Plugin.Settings.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\HorizonSoftware.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\HorizonSoftware.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\actool\_ProcessedImageAssetsPath.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\ibtool\_ProcessedInterfaceDefinitionsPath.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\coremlc\_ProcessedCoreMLModelsPath.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\_ProcessedBundleResourcesPath.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\_ProcessedContentPath.items
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\optimized\
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.csproj.AssemblyReference.cache
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.csproj.CoreCompileInputs.cache
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.csproj.CopyComplete
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.exe
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.pdb

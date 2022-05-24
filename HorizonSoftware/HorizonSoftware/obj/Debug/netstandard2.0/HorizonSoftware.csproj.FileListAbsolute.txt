@@ -1,0 +1,94 @@
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.deps.json
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\ref\HorizonSoftware.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.AssemblyInfo.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ref\HorizonSoftware.dll
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.pdb
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\SignupPage.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ActivationPage.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HomePageDetail.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HomePageFlyout.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ForgotPasswordPage.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\DepositePage.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\LoanPage.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\TodayPage.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ListViewPage2.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\PopupView.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\TodayBoth.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\TodayLoan.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature1.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature2.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature3.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature4.xaml.g.cs
+C:\Users\hp\source\repos\HorizonSoftware\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature5.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.deps.json
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.dll
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\ref\HorizonSoftware.dll
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.pdb
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.GeneratedMSBuildEditorConfig.editorconfig
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ActivationPage.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\DepositePage.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature1.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature2.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature3.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature4.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature5.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ForgotPasswordPage.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HomePageDetail.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HomePageFlyout.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ListViewPage2.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\LoanPage.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\PopupView.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\SignupPage.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\TodayBoth.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\TodayLoan.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\TodayPage.xaml.g.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.AssemblyInfoInputs.cache
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.AssemblyInfo.cs
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.csproj.CoreCompileInputs.cache
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\XamlC.stamp
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.dll
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ref\HorizonSoftware.dll
+F:\project\HorizonSoftware-master\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.deps.json
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\ref\HorizonSoftware.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\bin\Debug\netstandard2.0\HorizonSoftware.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.GeneratedMSBuildEditorConfig.editorconfig
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ActivationPage.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature1.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature2.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature3.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature4.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\Feature5.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ForgotPasswordPage.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HomePageDetail.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HomePageFlyout.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\SignupPage.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.AssemblyInfoInputs.cache
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.AssemblyInfo.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.csproj.CoreCompileInputs.cache
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\XamlC.stamp
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ref\HorizonSoftware.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\AmountPreview.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\OrderTable.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ItemsView.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.csproj.AssemblyReference.cache

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HorizonSoftware.OrderTable"
+             Title="Order Table">
+
+    <ContentPage.Content>
+    <ScrollView>
+        <!--<StackLayout x:Name="StackLayoutView" >
+        </StackLayout>-->
+            <StackLayout>
+        
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"/>
+                    <ColumnDefinition Width="380"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+
+                </Grid.RowDefinitions>
+
+                    <SearchBar                            
+                        Placeholder="Search Table" x:Name="SearchTable"  
+                      TextChanged="SearchTable_TextChanged"
+                    Grid.Row="1" Grid.Column="1" Text="{Binding TableName}"  Margin="0,0,0,10" TextColor="Gray"/>
+                    <!--Focused="AccountNumber_Focused"-->
+               </Grid>
+
+
+
+
+            <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"/>
+                     
+                        <!--<ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="10"/>-->
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"/>
+
+                        <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ListView Grid.Row="1" Grid.Column="1" x:Name="MyListView"  HasUnevenRows="True" Margin="-3,-3,3,3" ItemTapped="MyListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Image Source="{Binding URL}"  Grid.Column="1" Grid.Row="1" Margin="-130,-133,150,-80" ></Image>
+                                        <Label  Text="{Binding TableName}"  Grid.Column="2" Grid.Row="1"  Margin="-40,-10,0,0" FontSize="17" TextColor="Black"></Label>
+                                    </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+
+           
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
