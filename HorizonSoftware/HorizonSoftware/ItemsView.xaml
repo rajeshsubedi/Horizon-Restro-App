@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-         x:Class="HorizonSoftware.ItemsView">
+         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:xct="http://xamarin.com/schemas/2020/toolkit" 
+             x:Class="HorizonSoftware.ItemsView"
+             >
+    
     <NavigationPage.TitleView>
         <StackLayout>
             <Grid>
@@ -17,12 +19,175 @@
                     <RowDefinition Height="5"/>
                     <RowDefinition Height="40"/>
                 </Grid.RowDefinitions>
-             <Image x:Name="Lable2" Grid.Row="1" Grid.Column="1" Margin="-30,-5,0,5"/>
-            <Label x:Name="Label" 
-               TextColor="White"               
-               HorizontalTextAlignment="Start" Grid.Column="2" Grid.Row="1" Padding="-5,3,0,0" FontAttributes="Bold" FontSize="18"/>
+
+                <Label x:Name="Label1" 
+                               TextColor="#112B47"               
+                               HorizontalTextAlignment="Start" Grid.Column="3" Grid.Row="1" Padding="-5,3,0,0" FontAttributes="Bold" FontSize="18"/>
+                <Image x:Name="Label3" Grid.Row="1" Grid.Column="1" Margin="-30,-5,0,5"/>
+                <Label x:Name="Label2" 
+                               TextColor="White"               
+                               HorizontalTextAlignment="Start" Grid.Column="2" Grid.Row="1" Padding="-5,3,0,0" FontAttributes="Bold" FontSize="18"/>
             </Grid>
         </StackLayout>
     </NavigationPage.TitleView>
 
+    <ScrollView>
+        <Grid>
+            <xct:TabView
+                TabStripPlacement="Top"
+                TabStripBackgroundColor="Blue"
+                TabStripHeight="60"
+                TabIndicatorColor="Yellow"
+                TabContentBackgroundColor="Yellow"
+                >
+
+                <xct:TabViewItem
+                    x:Name = "ItemsTapped"
+                    Icon="menu.png"
+                    Text="Items"
+                    TextColor="White"                  
+                    TextColorSelected="Yellow"
+                    FontSize="14"
+                    TabTapped="ItemsTapped_TabTapped">
+
+                    <StackLayout>
+
+                        <Grid BackgroundColor="White">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0"/>
+                                <ColumnDefinition Width="380"/>
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="55"/>
+                            </Grid.RowDefinitions>
+
+                    <SearchBar               
+                                Placeholder="Search Table" x:Name="ItemsSearchTable"  
+                              TextChanged="ItemsSearchTable_TextChanged"
+                            Grid.Row="1" Grid.Column="1" Text="{Binding ItemName}"  Margin="0,0,0,0" TextColor="Gray"/>
+                                    <!--Focused="AccountNumber_Focused"-->
+                        </Grid>
+
+
+                        <Grid BackgroundColor="White" Margin="0,-5,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0"/>
+
+                                <!--<ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="10"/>-->
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0"/>
+
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <ListView Grid.Row="1" Grid.Column="1" x:Name="MyListView"  HasUnevenRows="True" Margin="-3,-3,3,3" ItemTapped="MyListView_ItemTapped">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <Grid>
+                                                
+                                                <Image Source="{Binding URL}"  Grid.Column="1" Grid.Row="1" Margin="-105,-128,163,-94" ></Image>
+                                                <Label Text="{Binding ItemName}"  Grid.Column="2" Grid.Row="1"  Margin="-150,-10,0,0" FontSize="17" TextColor="Black"></Label>
+                                                <Label Text="{Binding Price}"  Grid.Column="2" Grid.Row="1"  Margin="90,-10,0,0" FontSize="14" TextColor="Black"></Label>
+
+                                            </Grid>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Grid>
+                    </StackLayout>
+                </xct:TabViewItem>
+
+
+
+
+
+                <!--For Ordered Tab-->
+
+
+                <xct:TabViewItem
+                    Icon="Ordered.png"
+                    Text="Ordered"
+                    TextColor="White"
+                    TextColorSelected="Yellow"
+                    FontSize="14"
+                    TabTapped="TabViewItem_TabTapped">
+
+                    <StackLayout>
+                    <CollectionView x:Name="myCollectionView"
+                        SelectionMode="Single"
+                        Margin="10,10,10,0">
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <SwipeView>
+
+                                    <SwipeView.RightItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="Edit"
+                                                       x:Name="Edit"                                             
+                                           BackgroundColor="SkyBlue"
+                                           CommandParameter="{Binding }"
+                                            Invoked="Edit_Invoked_1"/>
+
+                                            <SwipeItem Text="Delete"
+                                                       x:Name="Delete"
+                                           BackgroundColor="IndianRed"
+                                           CommandParameter="{Binding }"
+                                           Invoked="Delete_Invoked_1"/>
+                                        </SwipeItems>
+                                    </SwipeView.RightItems>
+
+                                    <Grid RowSpacing="0" BackgroundColor="#E8ECF0">
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+
+
+                                        <Line Grid.RowSpan="1" Grid.ColumnSpan="2" X1="0" Y1="0" X2="393"  Y2="0" 
+                                     Stroke="lightgray" StrokeThickness="10" ></Line>
+
+
+
+                                        <Label Text="{Binding Quantity}"
+                           Grid.Row="0" Grid.RowSpan="2" Grid.Column="1"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand" TextColor="Black" FontAttributes="Bold" Margin="280,0,5,0"/>
+
+                                        <Label Text="{Binding ItemName}"
+                           Grid.Row="0" Grid.Column="1"
+                           VerticalOptions="CenterAndExpand"
+                           FontSize="15"
+                           FontAttributes="Bold" TextColor="Black" Margin="5,5,0,0"/>
+
+                                        <Label Text="{Binding Price}"
+                           Grid.Row="1" Grid.Column="1" TextColor="Black" Margin="5,0,0,5"/>
+
+
+
+                                    </Grid>
+                                </SwipeView>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    </StackLayout>
+                    
+                </xct:TabViewItem>
+            </xct:TabView>
+        </Grid>
+    </ScrollView>
 </ContentPage>

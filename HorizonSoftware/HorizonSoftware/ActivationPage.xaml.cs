@@ -29,7 +29,7 @@ namespace HorizonSoftware
         {
             InitializeComponent();
             string srvrdbname = "mydb";
-            string srvrname = "192.168.1.96";
+            string srvrname = "192.168.1.71";
             string srvrusername = "Rajesh";
             string srvrpassword = "12345";
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";
@@ -155,18 +155,7 @@ namespace HorizonSoftware
         }
 
 
-        //protected override bool OnBackButtonPressed()
-        //{
-        //    Device.BeginInvokeOnMainThread(async () =>
-        //    {
-        //        var result = await DisplayAlert("Alert!", "Do you want to exit?", "yes", "No");
-        //        if (result) await Navigation.PopAsync();
-
-        //    });
-        //    return base.OnBackButtonPressed();
-        //    return true;
-
-        //}
+     
 
         protected override bool OnBackButtonPressed()
         {

@@ -2,69 +2,79 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HorizonSoftware.OrderTable"
-             Title="Order Table">
-
-    <ContentPage.Content>
-    <ScrollView>
-        <!--<StackLayout x:Name="StackLayoutView" >
-        </StackLayout>-->
-            <StackLayout>
-        
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0"/>
-                    <ColumnDefinition Width="380"/>
-
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="50"/>
-
-                </Grid.RowDefinitions>
-
-                    <SearchBar                            
-                        Placeholder="Search Table" x:Name="SearchTable"  
-                      TextChanged="SearchTable_TextChanged"
-                    Grid.Row="1" Grid.Column="1" Text="{Binding TableName}"  Margin="0,0,0,10" TextColor="Gray"/>
-                    <!--Focused="AccountNumber_Focused"-->
-               </Grid>
+             Title="Order Table"
+             BackgroundColor="yellow">
+    <CollectionView x:Name="TableOrder"
+                    ItemsLayout="VerticalGrid, 2"
+                    >
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="90" />
+                        <RowDefinition Height="0" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
 
 
+                    <Frame CornerRadius="40" Grid.Column="1" Grid.Row="1"
+                         Padding="0"
+                        IsClippedToBounds="True">
+                        <ImageButton                        
+                            Grid.RowSpan="2"
+                               Grid.Column="1"
+                               Grid.Row="1"
+                               Source="{Binding URL}"
+                               Aspect="AspectFill"
+                               HeightRequest="90"
+                               WidthRequest="90"
+                            Clicked="ImageButton_Clicked" 
+                            CommandParameter="{Binding }">
+
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale"
+                            Value="1" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale"
+                            Value="0.6" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </ImageButton>
+                    </Frame>
+                    
+                    <Label Grid.Column="1"
+                           Grid.Row="3"
+                           Padding="25,0,0,0"
+                            Text="{Binding TableName}"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            LineBreakMode="TailTruncation" />
+                    
+                    <Label Grid.Column="1"
+                           Grid.Row="4"
+                           Margin="45,0,0,0"
+                            Text="{Binding TableNo}"                              
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            LineBreakMode="TailTruncation" />
 
 
-            <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0"/>
-                     
-                        <!--<ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition Width="10"/>-->
-
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0"/>
-
-                        <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <ListView Grid.Row="1" Grid.Column="1" x:Name="MyListView"  HasUnevenRows="True" Margin="-3,-3,3,3" ItemTapped="MyListView_ItemTapped">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid>
-                                <Image Source="{Binding URL}"  Grid.Column="1" Grid.Row="1" Margin="-130,-133,150,-80" ></Image>
-                                        <Label  Text="{Binding TableName}"  Grid.Column="2" Grid.Row="1"  Margin="-40,-10,0,0" FontSize="17" TextColor="Black"></Label>
-                                    </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </Grid>
-
-
-           
-
-            </StackLayout>
-        </ScrollView>
-    </ContentPage.Content>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 </ContentPage>

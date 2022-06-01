@@ -7,7 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using System.Data.SQLite;
+using System.IO;
 namespace HorizonSoftware
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -17,10 +18,8 @@ namespace HorizonSoftware
         {
             public string URL { get; set; }
             public string TableName { get; set; }
+            public string TableNo { get; set; }
         }
-
-       
-
 
         public ObservableCollection<string> mysqlLists { get; set; }
         public string TableName { get; private set; }
@@ -31,8 +30,9 @@ namespace HorizonSoftware
         public OrderTable()
         {
             InitializeComponent();
+
             string srvrdbname = "mydb";
-            string srvrname = "192.168.1.96";
+            string srvrname = "192.168.1.71";
             string srvrusername = "Rajesh";
             string srvrpassword = "12345";
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";
@@ -46,71 +46,27 @@ namespace HorizonSoftware
             {
                 mysqlLists.Add(new mysqlList
                 {
+                    TableNo = reader["TableNo"].ToString(),
                     URL = reader["URL"].ToString(),
                     TableName = reader["TableName"].ToString(),
 
                 }
-                  );
-    
+                  ); ;
+
             }
             reader.Close();
             //reader.Dispose();
             sqlConnection.Close();
-            MyListView.ItemsSource = mysqlLists;
+            TableOrder.ItemsSource = mysqlLists;
         }
 
 
-
-        private async void SearchTable_TextChanged(object sender, TextChangedEventArgs e)
+        private void ImageButton_Clicked(object sender, EventArgs e)
         {
-            try
-            {
-
-                List<mysqlList> mysqlLists = new List<mysqlList>();
-                sqlConnection.Open();
-                string queryString = $"select URL,TableName from dbo.Tabledb Where TableName like '%{e.NewTextValue}%'";
-
-                SqlCommand command = new SqlCommand(queryString, sqlConnection);
-                SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    mysqlLists.Add(new mysqlList
-                    {
-                        URL = reader["URL"].ToString(),
-                        TableName = reader["TableName"].ToString(),
-                    }
-                    );
-                }
-                reader.Close();
-                sqlConnection.Close();
-                MyListView.ItemsSource = mysqlLists;
-            }
-            catch (Exception ex)
-            {
-                await App.Current.MainPage.DisplayAlert("Alert", ex.Message, "Ok");
-                throw;
-            }
+            var item = sender as ImageButton;
+            var emp = item.CommandParameter as mysqlList;      
+            Navigation.PushAsync(new ItemsView(emp.TableNo, emp.TableName, emp.URL));
         }
-
-
-
-
-    
-
-        private void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            if (e.Item == null)
-            {
-                return;
-            }
-
-            var selectedItem = (mysqlList)e.Item; // model
-            Navigation.PushAsync(new ItemsView(selectedItem.TableName,selectedItem.URL)); // pass the selected whole item from list to DetaiPage 'selectedItem' using constructor
-            ((ListView)sender).SelectedItem = null;
-
-     
-        }
-
-
     }
+
 }

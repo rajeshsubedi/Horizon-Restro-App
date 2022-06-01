@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct ="http://xamarin.com/schemas/2020/toolkit" 
+           x:Class="HorizonSoftware.QuantityPopup"
+           Size="300,200" >
+           <!--IsLightDismissEnabled="False"-->
+
+    <StackLayout>
+
+        <Label x:Name="Label1" 
+                               TextColor="Black"               
+                               HorizontalOptions="CenterAndExpand" Padding="-5,3,0,0" FontAttributes="Bold" FontSize="18"/>
+  
+
+        <Label Text="Select Quantaty?" FontAttributes="Bold" FontSize="18" HorizontalOptions="CenterAndExpand"/>
+
+
+
+        <Entry  x:Name="Quantity" Placeholder="Enter quantity" TextColor="#171717" PlaceholderColor="Gray"   Margin="10,0,10,0" Keyboard="Numeric"></Entry>
+
+        <Button 
+              VerticalOptions="Center"
+              Text="ok"
+                x:Name="ok"
+              TextColor="White"
+              BackgroundColor="#112B47"
+                BorderColor="#6D6D6D"
+              BorderWidth="1.5"
+              CornerRadius="20"
+               Clicked="Ok_Clicked"
+                Margin="180,30,20,0"
+              ></Button>
+    </StackLayout>
+</xct:Popup>

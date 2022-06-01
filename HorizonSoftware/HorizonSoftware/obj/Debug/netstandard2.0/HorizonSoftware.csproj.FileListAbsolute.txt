@@ -91,4 +91,6 @@ F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\Horizo
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\AmountPreview.xaml.g.cs
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\OrderTable.xaml.g.cs
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\ItemsView.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\QuantityPopup.xaml.g.cs
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\AmountView.xaml.g.cs
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware\obj\Debug\netstandard2.0\HorizonSoftware.csproj.AssemblyReference.cache
