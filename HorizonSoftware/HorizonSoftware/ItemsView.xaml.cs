@@ -24,6 +24,7 @@ namespace HorizonSoftware
             public string Quantity { get; set; }
             public string Price { get; set; }
             public string ID { get; set; }
+        
         }
         public ObservableCollection<string> mysqlLists { get; set; }
         public string ItemName { get; private set; }
@@ -78,7 +79,7 @@ namespace HorizonSoftware
 
                 List<mysqlList> mysqlLists = new List<mysqlList>();
                 sqlConnection.Open();
-                string queryString = $"select URL,ItemName from dbo.Items Where ItemName like '%{e.NewTextValue}%'";
+                string queryString = $"select URL,ItemName,Price from dbo.Items Where ItemName like '%{e.NewTextValue}%'";
                 SqlCommand command = new SqlCommand(queryString, sqlConnection);
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
@@ -86,19 +87,18 @@ namespace HorizonSoftware
                     mysqlLists.Add(new mysqlList
                     {
                         URL = reader["URL"].ToString(),
-                        ItemName = reader["ItemName"].ToString(),
-                        
+                        ItemName = reader["ItemName"].ToString(), 
+                        Price = reader["Price"].ToString(),
                     }
                     );
                 }
                 reader.Close();
                 sqlConnection.Close();
                 MyListView.ItemsSource = mysqlLists;
-                //MyListView1.ItemsSource = mysqlLists;
             }
             catch (Exception ex)
             {
-                await App.Current.MainPage.DisplayAlert("Alert", ex.Message, "Ok");
+                await Application.Current.MainPage.DisplayAlert("Alert", ex.Message, "Ok");
                 throw;
             }
         }
@@ -107,38 +107,64 @@ namespace HorizonSoftware
 
         private async void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            if (e.Item == null)
-            {
-                return;
-            }
-            var selectedItem = (mysqlList)e.Item;         
-            object result = await Navigation.ShowPopupAsync(new QuantityPopup(selectedItem.ItemName));
-            if (result == null)
-            {
-                return;
-            }
-            Result = Convert.ToString(result);
-            if (Result == "")
-            {
-                await App.Current.MainPage.DisplayAlert("Alert", "Please enter Quantity ", "Ok");
-                return;
-            }
-            else
-            {
-                sqlConnection.Open();
-                using (SqlCommand command = new SqlCommand($"INSERT into ItemsSelect (ItemName, Quantity, Price,TableName,TableNo) VALUES(@ItemName, @Quantity, @Price,@TableName,@TableNo)", sqlConnection))
+            
+                if (e.Item == null)
                 {
-                    command.Parameters.Add(new SqlParameter("ItemName", selectedItem.ItemName));
-                    command.Parameters.Add(new SqlParameter("Quantity", Result));
-                    command.Parameters.Add(new SqlParameter("Price", selectedItem.Price));
-                    command.Parameters.Add(new SqlParameter("TableName", Label2.Text));
-                    command.Parameters.Add(new SqlParameter("TableNo", Label1.Text));
-                    command.ExecuteNonQuery();
+                    return;
                 }
-                sqlConnection.Close();
-            }
-           //((ListView)sender).SelectedItem = null;
+                var selectedItem = (mysqlList)e.Item;
+                object result = await Navigation.ShowPopupAsync(new QuantityPopup(selectedItem.ItemName));
+                if (result == null)
+                {
+                    return;
+                }
+                else
+                Result = Convert.ToString(result);
+
+
+                if (Result == "")
+
+                {
+                    await App.Current.MainPage.DisplayAlert("Alert", "Please enter Quantity ", "Ok");
+                    return;
+                }
+                
+
+                else
+                {
+                    try
+                    {
+                        var res = Convert.ToInt32(Result);
+                    }
+                    catch(Exception)
+                    {
+                        await Application.Current.MainPage.DisplayAlert("Alert", "Please enter right quantity.", "Ok");
+                        return;
+                    }
+                sqlConnection.Open();
+                using (SqlCommand command = new SqlCommand($"INSERT into ItemsSelect (ItemName, Quantity, Price,TableName,TableNo,Total) VALUES(@ItemName, @Quantity, @Price,@TableName,@TableNo,@Total)", sqlConnection))
+                    {
+                        command.Parameters.Add(new SqlParameter("ItemName", selectedItem.ItemName));
+                        command.Parameters.Add(new SqlParameter("Quantity", Result));
+                        command.Parameters.Add(new SqlParameter("Price", selectedItem.Price));
+                        command.Parameters.Add(new SqlParameter("TableName", Label2.Text));
+                        command.Parameters.Add(new SqlParameter("TableNo", Label1.Text));
+
+                        int quantity = Convert.ToInt32(Result);
+                        int price = Convert.ToInt32(selectedItem.Price);
+                        int total = quantity * price;
+                        string Total = total.ToString();
+                        command.Parameters.Add(new SqlParameter("Total", Total));
+                        command.ExecuteNonQuery();
+                        sqlConnection.Close();
+                    }
+                   
+                }
+       
         }
+
+
+
 
 
         private void TabViewItem_TabTapped(object sender, Xamarin.CommunityToolkit.UI.Views.TabTappedEventArgs e)
@@ -183,15 +209,29 @@ namespace HorizonSoftware
             {
                 await App.Current.MainPage.DisplayAlert("Alert", "Please enter Quantity ", "Ok");
                 return;
-            }
+            }     
             else
-            {                       
+            {
+                try
+                {
+                    var res = Convert.ToInt32(Result);
+                }
+                catch (Exception)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Alert", "Please enter right quantity.", "Ok");
+                    return;
+                }
                 sqlConnection.Open();
-                using (SqlCommand command = new SqlCommand($"UPDATE ItemsSelect set Quantity=@Quantity where TableNO=@TableNo and ID=@ID", sqlConnection))
+                using (SqlCommand command = new SqlCommand($"UPDATE ItemsSelect set Quantity=@Quantity,Total=@Total where TableNO=@TableNo and ID=@ID", sqlConnection))
                 {
                     command.Parameters.Add(new SqlParameter("ID", emp.ID));
                     command.Parameters.Add(new SqlParameter("Quantity", Result));           
                     command.Parameters.Add(new SqlParameter("TableNo", Label1.Text));
+                    int quantity = Convert.ToInt32(Result);
+                    int price = Convert.ToInt32(emp.Price);
+                    int total = quantity * price;
+                    string Total = total.ToString();
+                    command.Parameters.Add(new SqlParameter("Total", Total));
                     command.ExecuteNonQuery();
                 }
 
@@ -281,6 +321,31 @@ namespace HorizonSoftware
 
                 }
                 reader.Close();
+                //reader.Dispose();
+                myCollectionView.ItemsSource = mysqlLists;
+                sqlConnection.Close();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+
+
+        private async void ClearAll_Clicked(object sender, EventArgs e)
+        {
+            var result = await this.DisplayAlert("Alert!", "Do you want to Delete?", "yes", "No");
+            if (result == true)
+            {
+                sqlConnection.Open();
+                using (SqlCommand command = new SqlCommand($"Delete from ItemsSelect where TableNO=@TableNo and TableName=@TableName", sqlConnection))
+                {
+                    command.Parameters.Add(new SqlParameter("TableName", Label2.Text));
+                    command.Parameters.Add(new SqlParameter("TableNo", Label1.Text));
+                    command.ExecuteNonQuery();
+                }
+
                 //reader.Dispose();
                 myCollectionView.ItemsSource = mysqlLists;
                 sqlConnection.Close();

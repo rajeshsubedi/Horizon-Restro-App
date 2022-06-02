@@ -2077,3 +2077,4 @@ F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\Horizo
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.Android\obj\Debug\110\android\assets\System.ObjectModel.dll
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.Android\obj\Debug\110\android\assets\System.Reflection.Extensions.dll
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.Android\obj\Debug\110\android\assets\System.Threading.Tasks.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.Android\obj\Debug\110\res\drawable\closelogo.png
