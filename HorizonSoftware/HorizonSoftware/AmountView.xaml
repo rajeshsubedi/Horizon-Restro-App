@@ -32,7 +32,7 @@
 
 
 
-    <StackLayout BackgroundColor="Yellow">
+    <StackLayout BackgroundColor="LightYellow">
 
         <Button Text="Clear All" x:Name="ClearAll" HeightRequest="60" Margin="250,5,5,0" TextColor="White" FontAttributes="Bold" FontSize="16" BackgroundColor="Red" Clicked="ClearAll_Clicked" />
 
@@ -67,13 +67,13 @@
 
         <CollectionView x:Name="myCollectionView"
                         SelectionMode="Single"
-                        Margin="10,0,10,0">
+                        Margin="5,0,5,0">
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                 
 
-                        <Grid RowSpacing="0" BackgroundColor="#E8ECF0">
+                        <Grid RowSpacing="0" BackgroundColor="LightGreen">
 
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
@@ -82,7 +82,7 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="0"/>
                                 <ColumnDefinition Width="190"/>
-                               <ColumnDefinition Width="100"/>
+                               <ColumnDefinition Width="105"/>
                             </Grid.ColumnDefinitions>
 
 

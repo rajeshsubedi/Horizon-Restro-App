@@ -24,21 +24,23 @@ namespace HorizonSoftware
         public string ItemName { get; private set; }
        
         SqlConnection sqlConnection;
-    
 
-        public QuantityPopup(string title1, string quantity="")
+
+        public QuantityPopup(string title1, string title2, string quantity="")
         {
             InitializeComponent();
 
             Label1.Text = title1;
+            Label2.Source = title2;
             Quantity.Text = quantity.ToString();
 
             string srvrdbname = "mydb";
-            string srvrname = "192.168.1.71";
+            string srvrname = "192.168.1.74";
             string srvrusername = "Rajesh";
-            string srvrpassword = "12345";
+            string srvrpassword = "samsung@M51";
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";
             sqlConnection = new SqlConnection(sqlconn);
+          
         }
 
 
@@ -46,7 +48,7 @@ namespace HorizonSoftware
  
 
         private void Ok_Clicked(object sender, EventArgs e)
-        {
+        {         
             Dismiss(Quantity.Text);
         }
     }

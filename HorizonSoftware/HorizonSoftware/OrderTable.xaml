@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HorizonSoftware.OrderTable"
              Title="Order Table"
-             BackgroundColor="yellow">
+             BackgroundColor="LightYellow">
     <CollectionView x:Name="TableOrder"
                     ItemsLayout="VerticalGrid, 2"
                     >

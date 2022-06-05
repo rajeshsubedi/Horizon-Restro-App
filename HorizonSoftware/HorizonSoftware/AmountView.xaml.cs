@@ -19,9 +19,9 @@ namespace HorizonSoftware
         public class mysqlList
         {
             public string URL { get; set; }
-            public string ItemName { get; set; }          
+            public string ItemName { get; set; }
             public string Price { get; set; }
-            public string Quantity { get; set; }        
+            public string Quantity { get; set; }
             public string Total { get; set; }
             public string ID { get; set; }
         }
@@ -37,9 +37,9 @@ namespace HorizonSoftware
             Label3.Source = title3;
 
             string srvrdbname = "mydb";
-            string srvrname = "192.168.1.71";
+            string srvrname = "192.168.1.74";
             string srvrusername = "Rajesh";
-            string srvrpassword = "12345";
+            string srvrpassword = "samsung@M51";
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";
 
             sqlConnection = new SqlConnection(sqlconn);

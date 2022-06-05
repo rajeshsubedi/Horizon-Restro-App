@@ -4,7 +4,7 @@
              x:Class="HorizonSoftware.AmountPreview"
              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"  
              Title="Select Table"
-             BackgroundColor="Yellow">
+             BackgroundColor="LightYellow">
     <CollectionView x:Name="TableView"
                     ItemsLayout="VerticalGrid, 2">
         <CollectionView.ItemTemplate>

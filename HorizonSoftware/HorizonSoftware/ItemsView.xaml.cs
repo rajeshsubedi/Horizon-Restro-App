@@ -24,6 +24,7 @@ namespace HorizonSoftware
             public string Quantity { get; set; }
             public string Price { get; set; }
             public string ID { get; set; }
+            public string Total { get; set; }
         
         }
         public ObservableCollection<string> mysqlLists { get; set; }
@@ -40,9 +41,9 @@ namespace HorizonSoftware
                 Label3.Source = title3;
 
                 string srvrdbname = "mydb";
-                string srvrname = "192.168.1.71";
+                string srvrname = "192.168.1.74";
                 string srvrusername = "Rajesh";
-                string srvrpassword = "12345";
+                string srvrpassword = "samsung@M51";
                 string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";
                 sqlConnection = new SqlConnection(sqlconn);
 
@@ -57,8 +58,7 @@ namespace HorizonSoftware
                         URL = reader["URL"].ToString(),
                         ItemName = reader["ItemName"].ToString(),
                         Price = reader["Price"].ToString(),
-                
-
+             
                     }
                       );
 
@@ -113,7 +113,8 @@ namespace HorizonSoftware
                     return;
                 }
                 var selectedItem = (mysqlList)e.Item;
-                object result = await Navigation.ShowPopupAsync(new QuantityPopup(selectedItem.ItemName));
+           
+                object result = await Navigation.ShowPopupAsync(new QuantityPopup(selectedItem.ItemName,selectedItem.URL, "1"));
                 if (result == null)
                 {
                     return;
@@ -189,6 +190,7 @@ namespace HorizonSoftware
             //reader.Dispose();
             sqlConnection.Close();
             myCollectionView.ItemsSource = mysqlLists;
+      
         }
 
 
@@ -198,7 +200,7 @@ namespace HorizonSoftware
         {
             var item = sender as SwipeItem;
             var emp = item.CommandParameter as mysqlList;
-            var result =  await Navigation.ShowPopupAsync(new QuantityPopup(emp.ItemName,emp.Quantity));
+            var result =  await Navigation.ShowPopupAsync(new QuantityPopup(emp.ItemName, null , emp.Quantity));
             if (result == null)
             {
                 return;
@@ -257,6 +259,7 @@ namespace HorizonSoftware
                 //reader.Dispose();
               
                 myCollectionView.ItemsSource = mysqlLists;
+         
                 sqlConnection.Close();
 
             }
@@ -323,6 +326,7 @@ namespace HorizonSoftware
                 reader.Close();
                 //reader.Dispose();
                 myCollectionView.ItemsSource = mysqlLists;
+              
                 sqlConnection.Close();
             }
             else
@@ -331,24 +335,38 @@ namespace HorizonSoftware
             }
         }
 
-
-
-        private async void ClearAll_Clicked(object sender, EventArgs e)
+        private void Amount_TabTapped(object sender, Xamarin.CommunityToolkit.UI.Views.TabTappedEventArgs e)
         {
-            var result = await this.DisplayAlert("Alert!", "Do you want to Delete?", "yes", "No");
+         
+            
+        }
+
+        private async void confirmOrder_Clicked(object sender, EventArgs e)
+        {
+            var result = await this.DisplayAlert("Alert!", "Do you want to Confirm Order?", "yes", "No");
             if (result == true)
             {
+                List<mysqlList> mysqlLists = new List<mysqlList>();
                 sqlConnection.Open();
-                using (SqlCommand command = new SqlCommand($"Delete from ItemsSelect where TableNO=@TableNo and TableName=@TableName", sqlConnection))
+                SqlCommand command = new SqlCommand($"select ItemName,Price,Quantity,Total from dbo.ItemsSelect WHERE TableName='{Label2.Text}' and TableNo='{Label1.Text}' Union all select Item='Total',Price='',Quantity=sum(Quantity),Total=sum(Total) from dbo.ItemsSelect WHERE TableName='{Label2.Text}' and TableNo='{Label1.Text}'", sqlConnection);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
                 {
-                    command.Parameters.Add(new SqlParameter("TableName", Label2.Text));
-                    command.Parameters.Add(new SqlParameter("TableNo", Label1.Text));
-                    command.ExecuteNonQuery();
-                }
+                    mysqlLists.Add(new mysqlList
+                    {
+                        ItemName = reader["ItemName"].ToString(),
+                        Price = reader["Price"].ToString(),
+                        Quantity = reader["Quantity"].ToString(),
+                        Total = reader["Total"].ToString(),
 
+                    }
+                      ); ;
+
+                }
+                reader.Close();
                 //reader.Dispose();
-                myCollectionView.ItemsSource = mysqlLists;
                 sqlConnection.Close();
+                myCollectionView1.ItemsSource = mysqlLists;
             }
             else
             {

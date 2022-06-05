@@ -27,10 +27,10 @@
                    Padding="0"
                         IsClippedToBounds="True">
                     <Image Aspect="AspectFill"
-                           Source="restroimage1"
+                           Source="back1.png"
                            Grid.ColumnSpan="5"
                            Grid.RowSpan="4"
-                           Opacity="1"/>
+                           Opacity="0.7"/>
                 </Frame>
 
                         <!--for heading detail in dashboard 1st image-->
@@ -44,7 +44,7 @@
 
 
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="0"/>
                         <RowDefinition Height="60"/>
                         <RowDefinition Height="5"/>
                     </Grid.RowDefinitions>
@@ -73,24 +73,16 @@
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                           Text="Burger House And Crunchy Fried Checken"
-                            TextColor="White"
+                            TextColor="Black"
                             FontSize="30"
                             FontAttributes="Bold"
                            Style="{DynamicResource SubtitleStyle}"/>
-
-                        <!--<Label Margin="0,-5,0,0"
-                            HorizontalTextAlignment="Start"
-                           VerticalTextAlignment="Center"
-                          Text="Samasti24@gmail.com"
-                            TextColor="White"
-                            FontAttributes="Italic"
-                           Style="{DynamicResource SubtitleStyle}"/>-->
 
                         <Label Margin="0,-5,0,0"
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                                Text="Naxal,Kathmandu"
-                            TextColor="White"
+                            TextColor="Black"
                             FontAttributes="Italic"
                            Style="{DynamicResource SubtitleStyle}"/>
                     </StackLayout>
@@ -137,7 +129,7 @@
                             HorizontalOptions="Start"
                            VerticalOptions="Center"
                              Text="Order Table"
-                            TextColor="White"
+                            TextColor="Black"
                             FontSize="18"
                             FontAttributes="Bold"/>
 
@@ -153,10 +145,8 @@
                                   CornerRadius="20"
                                       Grid.Row="1"
                                        Grid.Column="2"
-                                    Font="18"
-                                                        
-                               Clicked="Amountpreview_Clicked"                    
-              >
+                                    Font="18"                                                       
+                               Clicked="Amountpreview_Clicked" >
                     </Button>
 
 
@@ -166,14 +156,10 @@
                             HorizontalOptions="Start"
                            VerticalOptions="Center"
                              Text="Amount Preview"
-                            TextColor="White"
+                            TextColor="Black"
                             FontSize="18"
                             FontAttributes="Bold"/>
- 
-                           <!--for image and detail 3 (Today)-->
-                 
-
-
+                    <!--for image and detail 3 (Today)-->
                 </Grid>
             </Grid>
         </StackLayout>
@@ -195,10 +181,10 @@
                     Padding="0"
                      IsClippedToBounds="True">
                     <Image Aspect="Fill"
-                      Source="restroimage1.png"
+                      Source="back1.png"
                            Grid.ColumnSpan="5"
                            Grid.RowSpan="4"
-                           Opacity="1"/>
+                           Opacity="0.7"/>
                 </Frame>
             </StackLayout>
         
@@ -241,7 +227,7 @@
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                           Text="Horizon Technology"
-                            TextColor="White"
+                            TextColor="Black"
                             FontSize="25"
                             FontAttributes="Bold"
                            Style="{DynamicResource SubtitleStyle}"/>
@@ -251,7 +237,7 @@
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                           Text="Horizontech24@gmail.com"
-                            TextColor="White"
+                            TextColor="Black"
                             FontAttributes="Italic"                        
                            Style="{DynamicResource SubtitleStyle}"/>
 
@@ -260,7 +246,7 @@
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                           Text="Mid-baneshor,Kathmandu"
-                            TextColor="White"
+                            TextColor="Black"
                             FontAttributes="Italic"                        
                            Style="{DynamicResource SubtitleStyle}"/>
                     </StackLayout>
