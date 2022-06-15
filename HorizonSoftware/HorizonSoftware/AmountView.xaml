@@ -24,7 +24,7 @@
                                TextColor="White"               
                                HorizontalTextAlignment="Start" Grid.Column="2" Grid.Row="1" Padding="-5,3,0,0" FontAttributes="Bold" FontSize="18"/>
                 <Label x:Name="Label1" 
-                               TextColor="#112B47"               
+                               TextColor="#4284f5"               
                                HorizontalTextAlignment="Start" Grid.Column="3" Grid.Row="1" Padding="-5,3,0,0" FontAttributes="Bold" FontSize="18"/>
                         </Grid>
                     </StackLayout>
@@ -32,92 +32,128 @@
 
 
 
-    <StackLayout BackgroundColor="LightYellow">
-
-        <Button Text="Clear All" x:Name="ClearAll" HeightRequest="60" Margin="250,5,5,0" TextColor="White" FontAttributes="Bold" FontSize="16" BackgroundColor="Red" Clicked="ClearAll_Clicked" />
-
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10"/>
-                <ColumnDefinition Width="210"/>
-                <ColumnDefinition Width="50"/>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width="10"/>
-            </Grid.ColumnDefinitions>
+    <Frame BackgroundColor="White">
+        <Grid Margin="-25,-25,-20,0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="5"/>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
             </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"/>
+                <ColumnDefinition Width="190"/>
+                <ColumnDefinition Width="105"/>
+            </Grid.ColumnDefinitions>
 
-            <Frame Grid.Column="1" Grid.Row="1" BackgroundColor="#112B47" Margin="-12,-10,1,0">
-                <Label Text="Items" TextColor="White" FontSize="20" FontAttributes="Bold" Padding="50,-5,0,0"/>
-            </Frame>
 
-            <Frame Grid.Column="2" Grid.Row="1" BackgroundColor="#112B47"  Margin="-5,-10,-9,0">
-
-                <Label Text="(Q)" TextColor="White" FontSize="18" FontAttributes="Bold" Padding="-3,-5,0,0"/>
-            </Frame>
-
-            <Frame Grid.Column="3" Grid.Row="1" BackgroundColor="#112B47" Margin="5,-10,-19,0">
-                <Label Text="Total" TextColor="White" FontSize="20" FontAttributes="Bold" Padding="10,-5,0,0"/>
-            </Frame>
-        </Grid>
+            <Label Text="Items" TextColor="White" FontSize="20" FontAttributes="Bold" Grid.Column="1" Grid.Row="0" BackgroundColor="#4284f5" Padding="80,5,0,0" Margin="5,8,-33,-8"></Label>
 
 
 
-        <CollectionView x:Name="myCollectionView"
+            <Label Text="(Q)" TextColor="White" FontSize="18" FontAttributes="Bold" Grid.Column="2" Grid.Row="0" BackgroundColor="#4284f5" Padding="13,5,0,0" Margin="30,8,20,-8"></Label>
+
+
+
+            <Label Text="Price" TextColor="White" FontSize="20" FontAttributes="Bold" Grid.Column="3" Grid.Row="0" BackgroundColor="#4284f5" Padding="40,5,0,0" Margin="-23,8,-50,-8"/>
+
+
+
+
+
+            <CollectionView x:Name="myCollectionView"
                         SelectionMode="Single"
-                        Margin="5,0,5,0">
+                        Margin="5,5,5,0" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" BackgroundColor="LightGreen">
 
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                
-
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
                         <Grid RowSpacing="0" BackgroundColor="LightGreen">
-
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="0"/>
-                                <ColumnDefinition Width="190"/>
-                               <ColumnDefinition Width="105"/>
-                            </Grid.ColumnDefinitions>
-
-
-
                             <Line Grid.RowSpan="1" Grid.ColumnSpan="4" X1="0" Y1="0" X2="393"  Y2="0" 
                                      Stroke="lightgray" StrokeThickness="10" ></Line>
+                            <Label Text="{Binding ItemName}"
+                               Grid.Row="0" Grid.Column="1"
+                               VerticalOptions="CenterAndExpand"
+                               FontSize="15"
+                               FontAttributes="Bold" TextColor="Black" Margin="-90,5,0,0"/>
+
+                            <Label Text="{Binding Price}"
+                               Grid.Row="1" Grid.Column="1" TextColor="Black" Margin="-90,0,0,5"/>
 
 
+                            <Label Text="{Binding Quantity}"
+                               Grid.Row="0" Grid.RowSpan="2" Grid.Column="2"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand" TextColor="Black" FontAttributes="Bold" Margin="0,0,5,0"/>
 
-                        <Label Text="{Binding ItemName}"
-                           Grid.Row="0" Grid.Column="1"
-                           VerticalOptions="CenterAndExpand"
-                           FontSize="15"
-                           FontAttributes="Bold" TextColor="Black" Margin="5,5,0,0"/>
-
-                        <Label Text="{Binding Price}"
-                           Grid.Row="1" Grid.Column="1" TextColor="Black" Margin="5,0,0,5"/>
-
-
-                        <Label Text="{Binding Quantity}"
-                           Grid.Row="0" Grid.RowSpan="2" Grid.Column="2"
-                           HorizontalOptions="CenterAndExpand"
-                           VerticalOptions="CenterAndExpand" TextColor="Black" FontAttributes="Bold" Margin="0,0,5,0"/>
-
-                        <Label Text="{Binding Total}"
-                           Grid.Row="0" Grid.RowSpan="2" Grid.Column="3"
-                               HorizontalTextAlignment="End"                                                 
-                           VerticalOptions="CenterAndExpand" TextColor="Black" FontAttributes="Bold" Margin="0,0,20,0"/>
-
-
+                            <Label Text="{Binding Total}"
+                               Grid.Row="0" Grid.RowSpan="2" Grid.Column="3"
+                                   HorizontalTextAlignment="End"                                                 
+                               VerticalOptions="CenterAndExpand" TextColor="Black" FontAttributes="Bold" Margin="0,0,20,0"/>
                         </Grid>
-            
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
+
+            <StackLayout Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Grid.RowSpan="6" BackgroundColor="LightGray" Margin="5,0,5,10">
+                <Grid Margin="0,-5,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"/>
+                        <RowDefinition Height="0"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"/>
+                        <ColumnDefinition Width="190"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Sum :" 
+                       Grid.Column="1" Grid.Row="2" TextColor="Black" FontSize="18" FontAttributes="Bold" Margin="60,5,0,0"/>
+                    <Label x:Name="quantitySum" TextColor="Black" Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" BackgroundColor="LightGreen" Padding="0,5,0,0" Margin="20,0,10,0"/>
+                    <Label x:Name="PriceSum" TextColor="Black" Grid.Row="2" Grid.Column="3" HorizontalTextAlignment="End" BackgroundColor="LightGreen" Padding="0,5,15,0" Margin="-10,0,-50,0"/>
+
+
+
+
+                    <Label Text="Discount(%) :"
+                       Grid.Column="1" Grid.Row="3" TextColor="Black" FontSize="18" FontAttributes="Bold"  Margin="60,3,0,8"/>
+                    <Entry x:Name= "Discount" TextColor="Black" Grid.Row="3" Grid.Column="2" HorizontalTextAlignment="Center" BackgroundColor="LightGreen" FontSize="14" Margin="20,-3,10,-2" Keyboard="Numeric" Completed="Discount_Completed" TextChanged="Discount_TextChanged"/>
+                    <Entry x:Name="discountAmount" TextColor="Black" Grid.Row="3" Grid.Column="3" HorizontalTextAlignment="End" FontSize="14" BackgroundColor="LightGreen" Keyboard="Numeric" Margin="-10,-3,-50,-2" Completed="discountAmount_Completed"/>
+
+
+
+
+
+                    <Label Text="VAT(13%) :"
+                       Grid.Column="1" Grid.Row="5" TextColor="Black" FontSize="18" FontAttributes="Bold" Margin="60,5,0,0"/>
+                    <CheckBox x:Name="vatClicked"  CheckedChanged="vatClicked_CheckedChanged" BackgroundColor="White" HorizontalOptions="Center" Grid.Column="2" Grid.Row="5" Margin="0,2,0,0"/>
+                    <Label x:Name="vatAmount" TextColor="Black"  Grid.Row="5" Grid.Column="3" HorizontalTextAlignment="End" BackgroundColor="LightGreen" Padding="0,5,15,0" Margin="-10,0,-50,0"/>
+
+
+                    <Label Text="Service Charge(10%) :" 
+                       Grid.Column="1" Grid.Row="4" TextColor="Black" FontSize="18" FontAttributes="Bold" Margin="10,5,0,0"/>
+                    <CheckBox x:Name="chargeClicked"  CheckedChanged="chargeClicked_CheckedChanged" BackgroundColor="White" HorizontalOptions="Center" Grid.Column="2" Grid.Row="4"/>
+                    <Label x:Name="chargeAmount" TextColor="Black"  Grid.Row="4" Grid.Column="3" HorizontalTextAlignment="End" BackgroundColor="LightGreen" Padding="0,5,15,0" Margin="-10,0,-50,0"/>
+
+
+
+                    <Label Text="Total :" 
+                       Grid.Column="1" Grid.Row="6" TextColor="Black" FontSize="18" FontAttributes="Bold" Margin="65,5,0,0"/>
+                    <Label x:Name="totalAmount" TextColor="Black" FontAttributes="Bold" Grid.Row="6" Grid.Column="3" HorizontalTextAlignment="End" BackgroundColor="LightGreen" Padding="0,5,15,0" Margin="-10,0,-50,0"/>
+                </Grid>
+            </StackLayout>
+            
+        </Grid>
+    </Frame>
 </ContentPage>

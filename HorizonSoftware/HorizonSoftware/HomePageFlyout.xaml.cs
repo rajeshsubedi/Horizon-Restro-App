@@ -15,7 +15,8 @@ namespace HorizonSoftware
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePageFlyout : ContentPage
     {
-        ViewCell lastCell;
+        //ViewCell lastCell;
+
         public ListView ListView;
 
         public HomePageFlyout()
@@ -34,11 +35,11 @@ namespace HorizonSoftware
             {
                 MenuItems = new ObservableCollection<HomePageFlyoutMenuItem>(new[]
                 {
-                    new HomePageFlyoutMenuItem { Id = 0, Title = "HomePage" , IconSource="comp1.png" ,TargetType=typeof(HomePageDetail) },
-                    new HomePageFlyoutMenuItem { Id = 1, Title = "Feature2" , IconSource="comp1.png" ,TargetType=typeof(Feature2)},
-                    new HomePageFlyoutMenuItem { Id = 2, Title = "Feature3" , IconSource="comp1.png" ,TargetType=typeof(Feature3)},
-                    new HomePageFlyoutMenuItem { Id = 3, Title = "Feature4" , IconSource="comp1.png" ,TargetType=typeof(Feature4)},
-                    new HomePageFlyoutMenuItem { Id = 4, Title = "Feature5" ,IconSource="comp1.png" ,TargetType=typeof(Feature5)},
+                    new HomePageFlyoutMenuItem { Id = 0, Title = "HomePage" , IconSource="Home.png" ,TargetType=typeof(HomePageDetail)},
+                    new HomePageFlyoutMenuItem { Id = 1, Title = "Feature2" , IconSource="Comp.png" ,TargetType=typeof(Feature2)},
+                    new HomePageFlyoutMenuItem { Id = 2, Title = "Feature3" , IconSource="Comp.png" ,TargetType=typeof(Feature3)},
+                    new HomePageFlyoutMenuItem { Id = 3, Title = "Feature4" , IconSource="Comp.png" ,TargetType=typeof(Feature4)},
+                    new HomePageFlyoutMenuItem { Id = 4, Title = "LogOut" ,IconSource="Logout.png" , TargetType=typeof(HomePageDetail)},
                 });
             }
 
@@ -54,15 +55,38 @@ namespace HorizonSoftware
             #endregion
         }
 
-        private void ViewCell_Tapped(object sender, EventArgs e)
+
+        protected override bool OnBackButtonPressed()
         {
-            if (lastCell != null)
-                lastCell.View.BackgroundColor = Color.Transparent;
-            var viewCell = (ViewCell)sender;
-            if (viewCell.View != null)
+            Device.BeginInvokeOnMainThread(async () =>
             {
-                viewCell.View.BackgroundColor = Color.Orange;
-                lastCell = viewCell;
+                var result = await this.DisplayAlert("Alert!", "Do you really want to exit?", "Yes", "No");
+
+                if (result == true)
+                {
+
+                    _ = Navigation.PushAsync(new LoginPage());
+                }
+            });
+            return true;
+        }
+
+
+        private async void MenuItemsListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+            if (e.Item == null)
+            {
+                return;
+            }
+            var selectedItem = (HomePageFlyoutMenuItem)e.Item;
+            if (selectedItem.Title == "LogOut")
+            {
+               var result = await DisplayAlert("Alert!", "Do you really want to LogOut?", "Yes", "No");
+                if (result)
+                {
+                    _ = Navigation.PushAsync(new LoginPage()); return;
+                }
             }
         }
     }

@@ -9,26 +9,27 @@
                     >
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Grid Padding="10">
+                <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="10" />
                         <RowDefinition Height="90" />
                         <RowDefinition Height="0" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="45" />
                         <ColumnDefinition Width="100" />
                     </Grid.ColumnDefinitions>
 
 
-                    <Frame CornerRadius="40" Grid.Column="1" Grid.Row="1"
-                         Padding="0"
+                    <Frame CornerRadius="40" Grid.Column="1" Grid.Row="1"  BackgroundColor="{Binding Packed}"
+                         Padding="10"
                         IsClippedToBounds="True">
                         <ImageButton                        
                             Grid.RowSpan="2"
                                Grid.Column="1"
                                Grid.Row="1"
                                Source="{Binding URL}"
+                            BackgroundColor="{Binding Packed}"
                                Aspect="AspectFill"
                                HeightRequest="90"
                                WidthRequest="90"

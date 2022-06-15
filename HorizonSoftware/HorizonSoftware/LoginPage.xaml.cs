@@ -18,7 +18,7 @@ namespace HorizonSoftware
         {
             InitializeComponent();
             string srvrdbname = "mydb";
-            string srvrname = "192.168.1.74";
+            string srvrname = "192.168.1.69";
             string srvrusername = "Rajesh";
             string srvrpassword = "samsung@M51";
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";
@@ -65,15 +65,15 @@ namespace HorizonSoftware
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            {
-                Navigation.PushAsync(new SignupPage());
-            }
+            //{
+            //    Navigation.PushAsync(new SignupPage());
+            //}
         }
 
 
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ForgotPasswordPage(txtUsername.Text));
+            //Navigation.PushAsync(new ForgotPasswordPage(txtUsername.Text));
         }
 
 

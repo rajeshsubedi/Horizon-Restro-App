@@ -38,18 +38,6 @@
           "lib/netstandard2.0/Azure.Identity.dll": {}
         }
       },
-      "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.0.0.6482"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll": {}
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -658,7 +646,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Stub.System.Data.SQLite.Core.NetStandard/1.0.115.5": {
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/System.Data.SQLite.dll": {}
@@ -854,16 +842,16 @@
           }
         }
       },
-      "System.Data.SQLite/1.0.115.5": {
+      "System.Data.SQLite/1.0.116": {
         "type": "package",
         "dependencies": {
-          "System.Data.SQLite.Core": "[1.0.115.5]"
+          "System.Data.SQLite.Core": "[1.0.116]"
         }
       },
-      "System.Data.SQLite.Core/1.0.115.5": {
+      "System.Data.SQLite.Core/1.0.116": {
         "type": "package",
         "dependencies": {
-          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.115.5]"
+          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.116]"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -2057,7 +2045,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2401": {
+      "Xamarin.Forms/5.0.0.2478": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -2109,19 +2097,6 @@
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml",
         "pkgicon.png"
-      ]
-    },
-    "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
-      "sha512": "n/TIbW3a7q/h5wA5vt8VfkN3eecJN8nMlPVu3NS7hvFODg0YqFHXDgbX1O/a9agcuk5Km6DZqJqpxpcYRS9sOQ==",
-      "type": "package",
-      "path": "dltoolkit.forms.controls.flowlistview/2.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dltoolkit.forms.controls.flowlistview.2.0.11.nupkg.sha512",
-        "dltoolkit.forms.controls.flowlistview.nuspec",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
@@ -3155,10 +3130,10 @@
         "sqlitepclraw.provider.e_sqlite3.nuspec"
       ]
     },
-    "Stub.System.Data.SQLite.Core.NetStandard/1.0.115.5": {
-      "sha512": "WfrqQg6WL+r4H1sVKTenNj6ERLXUukUxqcjH1rqPqXadeIWccTVpydESieD7cZ/NWQVSKLYIHuoBX5du+BFhIQ==",
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
+      "sha512": "VEe/vzvn2ECKovtyb+nf8fsnNQ4EYOUms7gnp9729NN7FSR/0v/uVoBDO7DETzV7YCquRVwRnSnYuoOwAoTEKA==",
       "type": "package",
-      "path": "stub.system.data.sqlite.core.netstandard/1.0.115.5",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.116",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3172,7 +3147,7 @@
         "runtimes/osx-x64/native/SQLite.Interop.dll",
         "runtimes/win-x64/native/SQLite.Interop.dll",
         "runtimes/win-x86/native/SQLite.Interop.dll",
-        "stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+        "stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
         "stub.system.data.sqlite.core.netstandard.nuspec"
       ]
     },
@@ -3682,25 +3657,25 @@
         "version.txt"
       ]
     },
-    "System.Data.SQLite/1.0.115.5": {
-      "sha512": "zo5xzYAVkmREKM4ImeiEatwa9D6Bc1KvnmX+VFysJ4sf89yZVdz4uf7A351hZhqBbHsX4ZeULmYocokOPCOcKw==",
+    "System.Data.SQLite/1.0.116": {
+      "sha512": "ykbwLhE8ejsQKMGb1xUCVsbMboNG1BWEr88fdxCW6t3yoIFqGpYpkSpskXw7IACveAFf7FDNuYRSqNIqBlZFMg==",
       "type": "package",
-      "path": "system.data.sqlite/1.0.115.5",
+      "path": "system.data.sqlite/1.0.116",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "system.data.sqlite.1.0.115.5.nupkg.sha512",
+        "system.data.sqlite.1.0.116.nupkg.sha512",
         "system.data.sqlite.nuspec"
       ]
     },
-    "System.Data.SQLite.Core/1.0.115.5": {
-      "sha512": "vADIqqgpxaC5xR6qOV8/KMZkQeSDCfmmWpVOtQx0oEr3Yjq2XdTxX7+jfE4+oO2xPovAbYiz6Q5cLRbSsDkq6Q==",
+    "System.Data.SQLite.Core/1.0.116": {
+      "sha512": "djwmo97syWCpUPJbDS0e2qUFUa8cDLeIfMotVkaRkAC5gpfBSZLMzvoLkLp1prY8waAuH1jEC3wcB2ymVVQWtA==",
       "type": "package",
-      "path": "system.data.sqlite.core/1.0.115.5",
+      "path": "system.data.sqlite.core/1.0.116",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "system.data.sqlite.core.1.0.115.5.nupkg.sha512",
+        "system.data.sqlite.core.1.0.116.nupkg.sha512",
         "system.data.sqlite.core.nuspec"
       ]
     },
@@ -7324,10 +7299,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.2401": {
-      "sha512": "fk/V8QWjeyo8UXcsqsNRMd6o1H5PBfyXYm97nxvhMsJIdeqDgfRWyIsSurM8uLGLQGdQP23R+hHj7vcTSo2UjQ==",
+    "Xamarin.Forms/5.0.0.2478": {
+      "sha512": "UeOnndxByPTpbExq0jPL5zKYqtHN9ldsgjQfUk9XF1pWSJUIakF3nJkq/tCgCVp5E1yp9Eecgqcthzy6llKiGg==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.2401",
+      "path": "xamarin.forms/5.0.0.2478",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7536,29 +7511,28 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.2401.nupkg.sha512",
+        "xamarin.forms.5.0.0.2478.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "DLToolkit.Forms.Controls.FlowListView >= 2.0.11",
       "Microsoft.Data.SqlClient >= 4.1.0",
       "Microsoft.Data.Sqlite.Core >= 6.0.5",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 13.0.1",
       "Rg.Plugins.Popup >= 2.1.0",
       "SQLite >= 3.13.0",
-      "System.Data.SQLite >= 1.0.115.5",
-      "System.Data.SQLite.Core >= 1.0.115.5",
+      "System.Data.SQLite >= 1.0.116",
+      "System.Data.SQLite.Core >= 1.0.116",
       "System.Data.SqlClient >= 4.8.3",
       "Xam.Plugins.Forms.ImageCircle >= 3.0.0.5",
       "Xam.Plugins.Settings >= 3.1.1",
       "Xamarin.CommunityToolkit >= 2.0.2",
       "Xamarin.CommunityToolkit.Markup >= 2.0.2",
       "Xamarin.Essentials >= 1.7.3",
-      "Xamarin.Forms >= 5.0.0.2401",
+      "Xamarin.Forms >= 5.0.0.2478",
       "sqlite-net-pcl >= 1.8.116"
     ]
   },
@@ -7606,10 +7580,6 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
-          "DLToolkit.Forms.Controls.FlowListView": {
-            "target": "Package",
-            "version": "[2.0.11, )"
-          },
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[4.1.0, )"
@@ -7638,11 +7608,11 @@
           },
           "System.Data.SQLite": {
             "target": "Package",
-            "version": "[1.0.115.5, )"
+            "version": "[1.0.116, )"
           },
           "System.Data.SQLite.Core": {
             "target": "Package",
-            "version": "[1.0.115.5, )"
+            "version": "[1.0.116, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
@@ -7670,7 +7640,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.2401, )"
+            "version": "[5.0.0.2478, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

@@ -6,7 +6,7 @@
         <ResourceDictionary>
             <Color x:Key="Primary">#484559</Color>
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="#112B47" />
+                <Setter Property="BarBackgroundColor" Value="#4284f5" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
         </ResourceDictionary>

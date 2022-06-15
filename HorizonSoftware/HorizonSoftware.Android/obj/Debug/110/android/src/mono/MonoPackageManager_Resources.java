@@ -5,7 +5,6 @@ public class MonoPackageManager_Resources {
 		"HorizonSoftware.Android.dll",
 		"Azure.Core.dll",
 		"Azure.Identity.dll",
-		"DLToolkit.Forms.Controls.FlowListView.dll",
 		"EntityFramework.dll",
 		"EntityFramework.SqlServer.dll",
 		"FormsViewGroup.dll",

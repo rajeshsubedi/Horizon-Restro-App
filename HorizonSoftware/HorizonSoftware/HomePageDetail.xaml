@@ -3,21 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HorizonSoftware.HomePageDetail"
              Title="Horizon Technology"
-             BackgroundColor="#eeeeee">
-    
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add"           
-                 Order="Primary"
-                 Priority="0"
-                     />
-    </ContentPage.ToolbarItems>-->
-    <StackLayout>
-        <!--adding dashboard image-->
-         <StackLayout>
+             BackgroundColor="LightYellow">
+
+
+    <StackLayout Margin="0,0,0,0">
+
+        <StackLayout Margin="2,2,0,0">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="415"/>
-                    <!--<ColumnDefinition Width="*"/>-->
+                    <ColumnDefinition Width="407"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="400"/>
@@ -27,13 +21,13 @@
                    Padding="0"
                         IsClippedToBounds="True">
                     <Image Aspect="AspectFill"
-                           Source="back1.png"
+                           Source="restroimage.png"                   
                            Grid.ColumnSpan="5"
                            Grid.RowSpan="4"
-                           Opacity="0.7"/>
+                           Opacity="0.9"/>
                 </Frame>
 
-                        <!--for heading detail in dashboard 1st image-->
+                <!--for heading detail in dashboard 1st image-->
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="15"/>
@@ -73,7 +67,7 @@
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                           Text="Burger House And Crunchy Fried Checken"
-                            TextColor="Black"
+                            TextColor="White"
                             FontSize="30"
                             FontAttributes="Bold"
                            Style="{DynamicResource SubtitleStyle}"/>
@@ -82,7 +76,7 @@
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                                Text="Naxal,Kathmandu"
-                            TextColor="Black"
+                            TextColor="White"
                             FontAttributes="Italic"
                            Style="{DynamicResource SubtitleStyle}"/>
                     </StackLayout>
@@ -90,7 +84,7 @@
 
 
 
-                                <!--for Images and detail in dashboard-->
+                <!--for Images and detail in dashboard-->
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -107,13 +101,14 @@
                         <RowDefinition Height="30"/>
                     </Grid.RowDefinitions>
 
-                                     <!--for image and detail 1(Order table)-->
-
+                    <!--for image and detail 1(Order table)-->
+                    <!--BackgroundColor="#112B47"-->
                     <Button                 
                                   Text="Order table"
                                     x:Name="Ordertable"
                                   TextColor="White"
-                                  BackgroundColor="#112B47"
+                             
+                         BackgroundColor="#4284f5"
                                     BorderColor="#6D6D6D"
                                   BorderWidth="1.5"
                                   CornerRadius="20"
@@ -122,24 +117,25 @@
                                     FontSize="18"                         
                                Clicked="Ordertable_Clicked" >
                     </Button>
-                    
+
                     <Label Grid.Row="2"
                            Grid.Column="1"
                            Padding="50,0,-10,0"
                             HorizontalOptions="Start"
                            VerticalOptions="Center"
                              Text="Order Table"
-                            TextColor="Black"
+                            TextColor="White"
                             FontSize="18"
                             FontAttributes="Bold"/>
 
-                                      <!--for image and detail 2(amount previewreview)-->
+                    <!--for image and detail 2(amount previewreview)-->
                     <Button 
                                 
                                   Text="Amount Preview"
                                     x:Name="Amountpreview"
                                   TextColor="White"
-                                  BackgroundColor="#112B47"
+                                  BackgroundColor="#4284f5"
+                        
                                     BorderColor="#6D6D6D"
                                   BorderWidth="1.5"
                                   CornerRadius="20"
@@ -156,7 +152,7 @@
                             HorizontalOptions="Start"
                            VerticalOptions="Center"
                              Text="Amount Preview"
-                            TextColor="Black"
+                            TextColor="White"
                             FontSize="18"
                             FontAttributes="Bold"/>
                     <!--for image and detail 3 (Today)-->
@@ -165,47 +161,48 @@
         </StackLayout>
 
 
-                                              <!--for lower image-->
-        <StackLayout>
+
+        <!--for lower image-->
+
+
+        <StackLayout Margin="2,-4,0,0">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="415"/>
-                    <!--<ColumnDefinition Width="*"/>-->
+                    <ColumnDefinition Width="407"/>
+
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <!--<RowDefinition Height="*"/>-->
+                    <RowDefinition Height="197"/>
+
                 </Grid.RowDefinitions>
-            <StackLayout>
+
                 <Frame CornerRadius="20" 
-                    Padding="0"
-                     IsClippedToBounds="True">
-                    <Image Aspect="Fill"
-                      Source="back1.png"
+                            Padding="0"
+                             IsClippedToBounds="True">
+                    <Image Aspect="AspectFill"                          
+                          Source="restroimage.png"
                            Grid.ColumnSpan="5"
                            Grid.RowSpan="4"
-                           Opacity="0.7"/>
+                           Opacity="0.9"/>
                 </Frame>
-            </StackLayout>
-        
 
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10"/>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="10"/>
-                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="10"/>
+                    </Grid.ColumnDefinitions>
 
 
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="10"/>
-                    <RowDefinition Height="60"/>
-                    <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
-           
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
 
-            <Frame Padding="0" 
+
+                    <Frame Padding="0" 
                                 HeightRequest="55"
                                 WidthRequest="55"
                                 BackgroundColor="Black"
@@ -215,10 +212,10 @@
                                  Grid.Row="1"
                                 HorizontalOptions="Start"
                                 VerticalOptions="End">
-                <Frame.Content>
-                    <Image Source="horizon.png" Aspect="Fill"/>
-                </Frame.Content>
-            </Frame>
+                        <Frame.Content>
+                            <Image Source="horizon.png" Aspect="Fill"/>
+                        </Frame.Content>
+                    </Frame>
 
                     <StackLayout VerticalOptions="CenterAndExpand" Grid.Row="1" Margin="70,0,0,0"
                        Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
@@ -227,7 +224,7 @@
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                           Text="Horizon Technology"
-                            TextColor="Black"
+                            TextColor="White"
                             FontSize="25"
                             FontAttributes="Bold"
                            Style="{DynamicResource SubtitleStyle}"/>
@@ -237,7 +234,7 @@
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                           Text="Horizontech24@gmail.com"
-                            TextColor="Black"
+                            TextColor="White"
                             FontAttributes="Italic"                        
                            Style="{DynamicResource SubtitleStyle}"/>
 
@@ -246,28 +243,26 @@
                             HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
                           Text="Mid-baneshor,Kathmandu"
-                            TextColor="Black"
+                            TextColor="White"
                             FontAttributes="Italic"                        
                            Style="{DynamicResource SubtitleStyle}"/>
                     </StackLayout>
                 </Grid>
-                
+
                 <Button 
-              VerticalOptions="Center"
-              Text="logout"
-                x:Name="Close"
-              TextColor="White"
-              BackgroundColor="#112B47"
-                BorderColor="#6D6D6D"
-              BorderWidth="1.5"
-              CornerRadius="20"
-           Clicked="Close_Clicked_1"
-            Margin="120,120,120,0"
-              ></Button>
-                
+                          VerticalOptions="Center"
+                          Text="logout"
+                            x:Name="Close"
+                          TextColor="White"
+                          BackgroundColor="#4284f5"
+                            BorderColor="#6D6D6D"
+                          BorderWidth="1.5"
+                          CornerRadius="20"
+                       Clicked="Close_Clicked_1"
+                        Margin="120,100,120,0"
+                          ></Button>
+
             </Grid>
         </StackLayout>
-        
     </StackLayout>
-
 </ContentPage>

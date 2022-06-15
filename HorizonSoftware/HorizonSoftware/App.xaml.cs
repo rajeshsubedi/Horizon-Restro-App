@@ -1,9 +1,5 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using System.IO;
+﻿using Xamarin.Forms;
 using System.Net.NetworkInformation;
-using DLToolkit.Forms.Controls;
 
 namespace HorizonSoftware
 {
@@ -14,13 +10,7 @@ namespace HorizonSoftware
         {
             InitializeComponent();
             MainPage = new NavigationPage(new ActivationPage());
-            FlowListView.Init();
-            //{
-            //    BarBackgroundColor = Color.Black;
-            //}
-
-
-
+            //FlowListView.Init();
         }
 
         public static PhysicalAddress GetMacAddress()

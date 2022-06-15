@@ -22,7 +22,7 @@ namespace HorizonSoftware
             navigationPage.BarBackgroundColor = Color.Black;
             InitializeComponent();
             string srvrdbname = "mydb";
-            string srvrname = "192.168.1.74";
+            string srvrname = "192.168.1.69";
             string srvrusername = "Rajesh";
             string srvrpassword = "samsung@M51";
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";
@@ -53,7 +53,7 @@ namespace HorizonSoftware
 
                 if (result == true)
                 {
-                    /*    System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();*/ // Or anything else
+             
                     _ = Navigation.PushAsync(new LoginPage());
                 }
             });

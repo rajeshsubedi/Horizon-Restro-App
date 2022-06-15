@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:xct="http://xamarin.com/schemas/2020/toolkit" 
-             x:Class="HorizonSoftware.ItemsView"
-             >
+         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit" 
+          
+             x:Class="HorizonSoftware.ItemsView">
     
     <NavigationPage.TitleView>
         <StackLayout>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0"/>
-                    <ColumnDefinition Width="70"/>
-                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="110"/>
                     <ColumnDefinition Width="120"/>
                     <ColumnDefinition Width="10"/>
 
@@ -21,25 +22,26 @@
                 </Grid.RowDefinitions>
 
                 <Label x:Name="Label1" 
-                               TextColor="#112B47"               
-                               HorizontalTextAlignment="Start" Grid.Column="3" Grid.Row="1" Padding="-5,3,0,0" FontAttributes="Bold" FontSize="18"/>
+                               TextColor="#4284f5"               
+                               HorizontalTextAlignment="Start" Grid.Column="3" Grid.Row="1" Padding="-5,3,0,0" IsVisible="false" FontAttributes="Bold" FontSize="18"/>
                 <Image x:Name="Label3" Grid.Row="1" Grid.Column="1" Margin="-30,-5,0,5"/>
                 <Label x:Name="Label2" 
                                TextColor="White"               
-                               HorizontalTextAlignment="Start" Grid.Column="2" Grid.Row="1" Padding="-5,3,0,0" FontAttributes="Bold" FontSize="18"/>
+                               HorizontalTextAlignment="Start" Grid.Column="2" Grid.Row="1" Padding="-15,3,0,0" FontAttributes="Bold" FontSize="18"/>
                
             </Grid>
         </StackLayout>
     </NavigationPage.TitleView>
 
+                                                             <!--For Items Tab-->
     <ScrollView>
-        <Grid>
-            <xct:TabView
+   
+            <xct:TabView           
                 TabStripPlacement="Top"
-                TabStripBackgroundColor="Blue"
+                TabStripBackgroundColor="#2A547E"
                 TabStripHeight="60"
                 TabIndicatorColor="Yellow"
-                TabContentBackgroundColor="Yellow"
+                TabContentBackgroundColor="LightYellow"         
                 >
 
                 <xct:TabViewItem
@@ -56,7 +58,7 @@
 
                     <SearchBar  BackgroundColor="LightGray"          
                                 Placeholder="Search Table" x:Name="ItemsSearchTable"  
-                                TextChanged="ItemsSearchTable_TextChanged"
+                                TextChanged="ItemsSearchTable_TextChanged"                              
                                  Text="{Binding ItemName}"  Margin="10,20,10,10" TextColor="Gray"/>
 
                         
@@ -79,7 +81,7 @@
                                                 </Grid.RowDefinitions>
 
                                                 <Line Grid.RowSpan="1" Grid.ColumnSpan="4" X1="0" Y1="0" X2="393"  Y2="0" 
-                                     Stroke="yellow" StrokeThickness="6" ></Line>
+                                     Stroke="lightyellow" StrokeThickness="6" ></Line>
 
                                                 <Image Source="{Binding URL}"  Grid.Column="1" Grid.Row="1" Margin="-15,0,0,0" ></Image>
                                                 <Label Text="{Binding ItemName}"  Grid.Column="2" Grid.Row="1"  Margin="-10,10,0,0" FontSize="17" TextColor="Black"></Label>
@@ -99,19 +101,20 @@
 
 
 
-                <!--For Ordered Tab-->
+                                        <!--For Ordered Tab-->
 
 
                 <xct:TabViewItem
+                    x:Name="orderedTapped"
                     Icon="Ordered.png"
                     Text="Ordered"
                     TextColor="White"
                     TextColorSelected="Red"
                     FontAttributes="Bold"
                     FontSize="14"
-                    TabTapped="TabViewItem_TabTapped">
+                    TabTapped="orderedTapped_TabTapped">
 
-                    <StackLayout BackgroundColor="Yellow">
+                    <StackLayout BackgroundColor="LightYellow">
                         <CollectionView x:Name="myCollectionView"
                         SelectionMode="Single"
                         Margin="10,20,10,-10">
@@ -171,27 +174,32 @@
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
-
-                        <Button x:Name="confirmOrder" Text="Confirm Order" Grid.Row="2" Clicked="confirmOrder_Clicked" BackgroundColor="#112B47" HeightRequest="60" Margin="3,0,3,3" TextColor="White" FontAttributes="Bold"></Button>
+             
+                            <Entry x:Name="Remarks" Placeholder="Add Remarks" PlaceholderColor="Gray" TextColor="Black" Margin="50,10,50,0" Completed="Remarks_Completed"/>
+                 
+                        <Button x:Name="confirmOrder" Text="Confirm Order" Grid.Row="2" Clicked="confirmOrder_Clicked" CornerRadius="30" BackgroundColor="#4284f5" HeightRequest="60" Margin="30,0,30,10" TextColor="White" FontAttributes="Bold"></Button>
                     </StackLayout>
                 </xct:TabViewItem>
 
 
 
-                                        <!--yes 3rd tab yes-->
-                
-                
+                                        <!--yes 3rd  tab confirmrd yes-->
+
+
                 <xct:TabViewItem
-                    x:Name="Amount"
+                    x:Name="confirmTapped"
                     Icon="Ordered.png"
-                    Text="Amount"
+                    Text="Confirmed"
                     TextColor="White"
                     TextColorSelected="Red"
                     FontAttributes="Bold"
                     FontSize="14"
-                    TabTapped="Amount_TabTapped">
+                    TabTapped="confirmTapped_TabTapped">
+
+
 
                     <StackLayout BackgroundColor="LightYellow" Margin="0,15,0,0">
+
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="10"/>
@@ -205,16 +213,16 @@
                                 <RowDefinition Height="40"/>
                             </Grid.RowDefinitions>
 
-                            <Frame Grid.Column="1" Grid.Row="1" BackgroundColor="#112B47" Margin="-12,-10,1,0">
+                            <Frame Grid.Column="1" Grid.Row="1" BackgroundColor="#4284f5" Margin="-12,-10,1,0">
                                 <Label Text="Items" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="55,-10,-5,-5" />
                             </Frame>
 
-                            <Frame Grid.Column="2" Grid.Row="1" BackgroundColor="#112B47"  Margin="-5,-10,-9,0">
+                            <Frame Grid.Column="2" Grid.Row="1" BackgroundColor="#4284f5"  Margin="-5,-10,-9,0">
 
                                 <Label Text="(Q)" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="0,-10,-5,-5"/>
                             </Frame>
 
-                            <Frame Grid.Column="3" Grid.Row="1" BackgroundColor="#112B47" Margin="5,-10,-19,0">
+                            <Frame Grid.Column="3" Grid.Row="1" BackgroundColor="#4284f5" Margin="5,-10,-19,0">
                                 <Label Text="Total" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="10,-10,-5,-5"/>
                             </Frame>
                         </Grid>
@@ -274,10 +282,16 @@
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
+                        <Entry x:Name="remarksConfirmed" Placeholder="Remarks" IsReadOnly="True" Margin="50,10,50,10" TextColor="Black" PlaceholderColor="Gray"/>
+
                     </StackLayout>
                 </xct:TabViewItem>
                 
+                
+                
+                
+
             </xct:TabView>
-        </Grid>
+     
     </ScrollView>
 </ContentPage>

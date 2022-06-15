@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>   
 <xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct ="http://xamarin.com/schemas/2020/toolkit" 
-           x:Class="HorizonSoftware.QuantityPopup"
-           Size="300,230" 
-           BackgroundColor="Yellow">
+             x:Class="HorizonSoftware.QuantityPopup" 
+             Size="300,230" 
+             BackgroundColor="Yellow">
            
 
     <StackLayout BackgroundColor="LightGreen">
@@ -46,3 +46,6 @@
               ></Button>
     </StackLayout>
 </xct:Popup>
+
+
+

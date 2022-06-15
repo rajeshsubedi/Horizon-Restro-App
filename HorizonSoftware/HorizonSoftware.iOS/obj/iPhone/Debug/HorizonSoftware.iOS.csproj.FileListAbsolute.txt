@@ -220,3 +220,5 @@ F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\Horizo
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.csproj.CopyComplete
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.exe
 F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\obj\iPhone\Debug\HorizonSoftware.iOS.pdb
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.CommunityToolkit.dll
+F:\project\Horizon Restro Software\HorizonSoftware-master\HorizonSoftware\HorizonSoftware.iOS\bin\iPhone\Debug\Xamarin.CommunityToolkit.Markup.dll

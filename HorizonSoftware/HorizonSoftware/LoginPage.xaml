@@ -4,34 +4,88 @@
              x:Class="HorizonSoftware.LoginPage"
               NavigationPage.HasNavigationBar="false">
 
-    <StackLayout>
-        <!--<Entry Text="{Binding AccessToken}"/>-->
-
-
-
-        <Frame BackgroundColor="#112B47" Padding="0,0,0,0" CornerRadius="0">
-            <Label Text="Welcome to Horizon Technology!" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+    <StackLayout >
+        <Frame BackgroundColor="#0368d4" Padding="0,0,0,0" CornerRadius="0">
+            <Label Text="Welcome to Horizon Restro!" HorizontalTextAlignment="Center" TextColor="White" FontSize="35"/>
         </Frame>
-
-        <Image Source="horizon.png"
-               WidthRequest="110" 
-               HeightRequest="110">
-        </Image>
-
-        <Label Text="Please Login!" FontSize="Subtitle" FontAttributes="Bold" TextColor="#171717" Padding="160,10,0,0"/>
-
-
-        <StackLayout Padding="40,40,40,10" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
         
-            <!--<Entry  x:Name="txtUserName" Placeholder="UserName" TextColor="#171717" PlaceholderColor="Gray"></Entry>-->
-            <Entry  x:Name="txtUsername" Placeholder="Username" TextColor="#171717" PlaceholderColor="Gray"></Entry>
-            <Entry  x:Name="txtPassword" Placeholder="Password" IsPassword="True" TextColor="#171717" PlaceholderColor="Gray"></Entry>
+        <!--<Label Text="Please Login!" FontSize="Subtitle" FontAttributes="Bold" TextColor="#171717" HorizontalOptions="Center" Margin="0,50,0,0"/>-->
+
+        <StackLayout Padding="40,50,40,10" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Entry  x:Name="txtUsername" Placeholder="Username" TextColor="#171717" Margin="0,10,0,0" PlaceholderColor="Gray">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="White" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="Focused">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="LightGray" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Entry>
+            
+            <Entry  x:Name="txtPassword" Placeholder="Password" IsPassword="True" TextColor="#171717" Margin="0,10,0,0" PlaceholderColor="Gray">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="White" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="Focused">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="LightGray" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Entry>
         </StackLayout>
         
         
 
+       
+        
+                            
+        <StackLayout Margin="20,30,20,0">
+            <Button 
+              VerticalOptions="Center"
+              Text="Login"
+              TextColor="White"
+              BackgroundColor="#0368d4"
+                BorderColor="#6D6D6D"
+              BorderWidth="1.5"
+              CornerRadius="20"
+           Clicked="Button_Clicked"
+            Margin="100,0,100,0"
+              ></Button>
+        </StackLayout>
+        
+        
+        <StackLayout Margin="20,5,20,0">
+            <Button 
+              VerticalOptions="Center"
+              Text="CLOSE"
+                x:Name="Close"
+              TextColor="White"
+              BackgroundColor="IndianRed"
+                BorderColor="#6D6D6D"
+              BorderWidth="1.5"
+              CornerRadius="20"
+           Clicked="Button_Clicked_1"
+            Margin="100,0,100,0"
+              ></Button>
+        </StackLayout>
+
         <StackLayout>
-            <Label Padding="140,5,0,10">
+            <Label  HorizontalOptions="Center" Margin="0,5,0,5">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Frogot Password?" TextColor="#171717" FontAttributes="Bold" TextDecorations="Underline"/>
@@ -41,46 +95,10 @@
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
                 </Label.GestureRecognizers>
-
-
             </Label>
         </StackLayout>
-        
-        
-        
-        
-        
-        <StackLayout Margin="20,0,20,0">
-            <Button 
-              VerticalOptions="Center"
-              Text="Login"
-              TextColor="White"
-              BackgroundColor="#112B47"
-                BorderColor="#6D6D6D"
-              BorderWidth="1.5"
-              CornerRadius="20"
-           Clicked="Button_Clicked"
-            Margin="30,0,30,0"
-              ></Button>
-        </StackLayout>
-        
-        
-        <StackLayout Margin="20,10,20,0">
-            <Button 
-              VerticalOptions="Center"
-              Text="CLOSE"
-                x:Name="Close"
-              TextColor="White"
-              BackgroundColor="#112B47"
-                BorderColor="#6D6D6D"
-              BorderWidth="1.5"
-              CornerRadius="20"
-           Clicked="Button_Clicked_1"
-            Margin="30,0,30,0"
-              ></Button>
-        </StackLayout>
 
-
+        
         <Label HorizontalOptions="Center">
             <Label.FormattedText>
                 <FormattedString>
@@ -92,8 +110,32 @@
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
             </Label.GestureRecognizers>
+         </Label>
 
 
-        </Label>
+        <Frame  CornerRadius="10" HeightRequest="135" BackgroundColor="LightGreen" Margin="10,30,10,10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"/>
+                    <ColumnDefinition Width="60"/>
+             
+                </Grid.ColumnDefinitions>
+
+                <Image Source="horizonmod.png" Grid.Column="1" Grid.Row="1" Margin="-60,-10,-30,-30"/>
+                <Label Text="Powered BY:" Grid.Row="1" Grid.Column="2" FontAttributes="Bold" Margin="0,-10,0,-20" FontSize="16" TextColor="Black"/>
+                <Label Text="Horizon Technology Pvt Ltd." Grid.Row="2" Grid.Column="2" FontAttributes="Bold" Padding="0,-5,0,-10" Margin="0,-5,0,-10" FontSize="16" TextColor="Gray"/>
+                <Label Text="Head Office: Baneshor,Kathmandu" Grid.Row="3" Grid.Column="2" FontAttributes="Bold"  Padding="0,-2,0,10" Margin="0,-5,0,-10" FontSize="16" TextColor="Gray"/>
+                <Label Text="01-01-4499030,9851192614,9801092616" Grid.Row="4"  Grid.Column="2" FontAttributes="Bold"  Padding="0,5,0,5" Margin="0,-7,0,-8" FontSize="15" TextColor="Gray"/>
+                <Label Text="www.horizontechnology.com.np" Grid.Row="5" Grid.Column="2" FontAttributes="Bold"  Padding="0,-2,0,-10" Margin="0,3,0,-10" FontSize="16"  TextColor="Gray"/>
+            </Grid>
+       
+        </Frame>
+        
+
+
     </StackLayout>
 </ContentPage>
