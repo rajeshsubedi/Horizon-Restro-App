@@ -28,7 +28,7 @@ namespace HorizonSoftware
             InitializeComponent();
             txtUserName.Text = parameter;
             string srvrdbname = "mydb";
-            string srvrname = "192.168.1.69";
+            string srvrname = "192.168.1.72";
             string srvrusername = "Rajesh";
             string srvrpassword = "samsung@M51";
             string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";

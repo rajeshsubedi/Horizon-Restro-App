@@ -29,6 +29,7 @@ namespace HorizonSoftware
             public string remarksConfirmed { get; set; }
 
         }
+
         public ObservableCollection<string> mysqlLists { get; set; }
         public string ItemName { get; private set; }
       
@@ -46,7 +47,7 @@ namespace HorizonSoftware
            
 
             string srvrdbname = "mydb";
-                string srvrname = "192.168.1.69";
+                string srvrname = "192.168.1.72";
                 string srvrusername = "Rajesh";
                 string srvrpassword = "samsung@M51";
                 string sqlconn = $"Data Source={srvrname};Initial Catalog={srvrdbname};User ID={srvrusername};Password={srvrpassword}";
@@ -470,13 +471,13 @@ namespace HorizonSoftware
                 mysqlLists.Add(new mysqlList
                 {
                     ItemName = reader["ItemName"].ToString(),
-                    Price = reader["Price"].ToString(),
+                    Price = reader["ItemName"].ToString() == "Total" ? "" : reader["Price"].ToString(),
                     Quantity = reader["Quantity"].ToString(),
                     Total = reader["Total"].ToString(),
-                //remarksConfirmed = reader["Remarks"].ToString(),
+          
 
             });
-
+              
             }
             reader.Close();
 
@@ -487,23 +488,21 @@ namespace HorizonSoftware
             reader2.Close();
 
 
-            //SqlCommand command3= new SqlCommand($"select Remarks from dbo.ItemsSelect WHERE TableName='{Label2.Text}' and TableNo='{Label1.Text}' and Confirmed = 1 and Remarks IS NOT NULL", sqlConnection);
-            //SqlDataReader reader3 = command3.ExecuteReader();
 
-            //string[] array = new string[]{};
-            //StringBuilder bdr = new StringBuilder();
-            //foreach (string value in array)
-            //{
-            //    bdr.Append(value);
-            //    bdr.Append(',');
-            //}
-            //string remarks = bdr.ToString();
-            //remarksConfirmed.Text = remarks;
-            //reader3.Close();
 
-            string[] test = new string[]{"Hello","People"};
-           string remarks = string.Join(",", test);
-            remarksConfirmed.Text = remarks;
+            
+            SqlCommand command3 = new SqlCommand($"select distinct Remarks from dbo.ItemsSelect WHERE TableName='{Label2.Text}' and TableNo='{Label1.Text}' and Confirmed = 1 and Remarks IS NOT NULL", sqlConnection);
+            SqlDataReader reader3 = command3.ExecuteReader();
+           List<string> remarks = new List<string>();
+            while (reader3.Read())
+            {
+                remarks.Add(reader3["Remarks"].ToString());
+            }
+            string[] remarksArray = remarks.ToArray();
+            string remark = string.Join(",", remarksArray);
+            remarksConfirmed.Text = remark;
+            reader3.Close();
+
 
             sqlConnection.Close();
             myCollectionView1.ItemsSource = mysqlLists;
